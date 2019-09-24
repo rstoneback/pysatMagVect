@@ -39,7 +39,7 @@ install:
 
 # command to run tests
 script:
-  - nosetests  -vs --with-coverage --cover-package=pysatMagVect
+  - pytest -vs --cov=pysatMagVect/
 
 after_success:
   - coveralls
