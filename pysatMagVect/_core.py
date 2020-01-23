@@ -8,7 +8,7 @@ import scipy
 import scipy.integrate
 import numpy as np
 import datetime
-import pysat
+
 # import reference IGRF fortran code within the package
 from pysatMagVect import igrf as igrf
 
@@ -17,9 +17,10 @@ from pysatMagVect import igrf as igrf
 earth_a = 6378.1370
 earth_b = 6356.75231424518
 
-# standard geoncentric Earth radius
+# standard geocentric Earth radius
 # average radius of Earth
 earth_geo_radius = 6371.
+
 
 def geocentric_to_ecef(latitude, longitude, altitude):
     """Convert geocentric coordinates into ECEF
